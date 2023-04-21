@@ -1,5 +1,5 @@
 const assertEqual = function(actual, expected) {
-  //compare the two arguments
+ 
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
