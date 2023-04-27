@@ -10,13 +10,15 @@ const assertEqual = function (actual, expected) {
 
 const countOnly = function (allItems, itemsToCount) {
   const namesObject = {}
-  for (let name in itemsToCount) {
-    if (itemsToCount[name]) {
-      const nameCount = allItems.filter(item => item === name).length
-      const nameValue = nameCount > 0 ? nameCount : undefined
-      namesObject[name] = nameValue
-    } else {
-      namesObject[name] = undefined
+  for (const name of allItems) {
+
+    if (itemsToCount[name] === true) {
+      if (namesObject[name]) {
+      namesObject[name]++
+      } else {
+        namesObject[name] = 1
+      }
+      
     }
   }
   return namesObject;
