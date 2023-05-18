@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@camnaderi/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A package that provides utility",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/camronnad/lotide.git"
   },
-  "author": "",
+  "author": " Cam Naderi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/camronnad/lotide/issues"
